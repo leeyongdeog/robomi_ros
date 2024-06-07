@@ -10,17 +10,17 @@
 
 ---
 
-## 환경
+## 환경 (ip)
 
 ※ 참고: pc 최1 ip끝자리 223, 이1: ip끝자리 254, 147 사용 중
 
-pc Ubuntu 20.04 ROS1 noetic 접속: ssh yh6@192.168.123.123
-pc Ubuntu 18.04 ROS1 melodic 접속: ssh tk@192.168.123.127
+1. pc Ubuntu 20.04 ROS1 noetic 접속: ssh yh6@192.168.123.123
+1. pc Ubuntu 18.04 ROS1 melodic 접속: ssh tk@192.168.123.127
 
-pi 4B Ubuntu 20.04 ROS1 noetic 접속: ssh ubuntu@192.168.123.124
-pi 4B Ubuntu 20.04 ROS1 noetic 접속: ssh ubuntu@192.168.123.129
-pi 3B+ Ubuntu 20.04 ROS1 noetic 접속: ssh ubuntu@192.168.123.128
-pi 3B+ Rasbian buster 18.04 ROS1 noetic 접속: ssh pi@192.168.123.126
+1. pi 4B Ubuntu 20.04 ROS1 noetic 접속: ssh 1. ubuntu@192.168.123.124
+1. pi 4B Ubuntu 20.04 ROS1 noetic 접속: ssh ubuntu@192.168.123.129
+1. pi 3B+ Ubuntu 20.04 ROS1 noetic 접속: ssh ubuntu@192.168.123.128
+1. pi 3B+ Rasbian buster 18.04 ROS1 noetic 접속: ssh pi@192.168.123.126
 
 ---
 
