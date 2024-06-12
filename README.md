@@ -10,7 +10,7 @@
 
 ---
 
-## usb cam 2대를 rpi 연결 작동 요령 (결과물 실행 위주)
+## usb cam 2대를 rpi 연결 작동 요령 (결과물 실행 위주의 사례)
 
 ```
 roscore   # pc ip123에서 실행
@@ -28,7 +28,7 @@ roslaunch usb_cam usb_cam_2-test.launch   # rpi ip128에서 실행
 
 ---
 
-## 환경 (ip 및 계정 정보 )
+## 환경 (ip 및 작업 계정 정보)
 
 ※ 참고: pc 최1 ip끝자리 223, 이1: ip끝자리 122, 254, 147 사용 중
 
