@@ -32,14 +32,15 @@ roslaunch usb_cam usb_cam_2-test.launch   # rpi ip128에서 실행
 
 ※ 참고: pc 최1 ip끝자리 223, 이1: ip끝자리 122, 254, 147 사용 중
 
+1. pc Ubuntu 20.04 ROS1 noetic 접속: ssh ubuntu2004@192.168.123.122
 1. pc Ubuntu 20.04 ROS1 noetic 접속: ssh yh6@192.168.123.123
 1. pc Ubuntu 18.04 ROS1 melodic 접속: ssh tk@192.168.123.127
 
-1. rpi 4B Ubuntu 20.04 ROS1 noetic 접속: ssh ubuntu@192.168.123.121 (ref.)
+1. rpi 4B Ubuntu 20.04 ROS1 noetic 접속: ssh ubuntu@192.168.123.121 (ref. 형6)
 1. rpi 4B Ubuntu 20.04 ROS1 noetic 접속: ssh ubuntu@192.168.123.124
 1. rpi 4B Ubuntu 20.04 ROS1 noetic 접속: ssh ubuntu@192.168.123.129 (이1)
 1. rpi 4B Ubuntu 20.04 ROS1 noetic 접속: ssh ubuntu@192.168.123.19
-1. rpi 3B+ Ubuntu 20.04 ROS1 noetic 접속: ssh ubuntu@192.168.123.128 (박1)
+1. rpi 3B+ Ubuntu 20.04 ROS1 noetic 접속: ssh ubuntu@192.168.123.128 (최1)
 1. rpi 3B+ Rasbian buster 18.04 ROS1 noetic 접속: ssh pi@192.168.123.126 (김1)
 
 ※  각 rpi 계정의 홈 밑에 robomi_bot 디렉토리에 실행 결과물 생성
