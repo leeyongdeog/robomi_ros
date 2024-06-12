@@ -43,7 +43,8 @@ roslaunch usb_cam usb_cam_2-test.launch   # rpi ip128에서 실행
 1. rpi 3B+ Ubuntu 20.04 ROS1 noetic 접속: ssh ubuntu@192.168.123.128 (최1)
 1. rpi 3B+ Rasbian buster 18.04 ROS1 noetic 접속: ssh pi@192.168.123.126 (김1)
 
-※  각 rpi 계정의 홈 밑에 robomi_bot 디렉토리에 실행 결과물 생성
+※  각 rpi 계정의 홈 디렉토리 밑에 robomi_bot 작업 디렉토리에 실행 결과물 생성
+※  각 rpi 비번은 '연희6'
 
 ---
 
