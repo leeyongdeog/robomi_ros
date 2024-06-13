@@ -12,6 +12,9 @@ cd yolov5
 pip install -r requirements.txt  # install
 
 
+wget https://github.com/ultralytics/yolov5/releases/download/v6.0/yolov5s.pt
+
+
 
 unzip archive.zip
 
