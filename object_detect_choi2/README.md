@@ -77,6 +77,9 @@ python train.py --img 640 --epochs 50 --data data.yaml --weights yolov5m.pt --de
 
 
 
+실행하기 
+
+
 python detect.py --weights 본인주소/yolov5/runs/train/exp/weights/best.pt --img 416 --conf 0.25 --source 0
 
 exp1, exp2 이와 같은 exp 숫자는 학습 완료 시 출력됨
