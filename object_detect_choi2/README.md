@@ -18,6 +18,11 @@ wget https://github.com/Unsok1234/ros/raw/main/this.zip
 wget https://github.com/Unsok1234/ros/raw/main/data.yaml
 
 unzip this.zip
+
+
+
+
+
 압축을 해제하고 yolov5폴더로 이동시킨다
 
 
