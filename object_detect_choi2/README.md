@@ -16,13 +16,13 @@ wget https://github.com/ultralytics/yolov5/releases/download/v6.0/yolov5s.pt
 
 
 
-unzip archive.zip
+unzip test2.zip
 
 
 
 
 
-python train.py --img 640 --epochs 3 --data data.yaml --weights yolov5m.pt
+python train.py --img 640 --epochs 50 --data data.yaml --weights yolov5m.pt
 
 
 
