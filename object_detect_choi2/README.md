@@ -41,12 +41,35 @@ wget https://github.com/ultralytics/yolov5/releases/download/v6.0/yolov5m.pt
 
 
 gpu로 학습
+
+
+
+
+
+
+
 python train.py --img 640 --epochs 50 --data data.yaml --weights yolov5m.pt
 
 
 
 
+
+
+
+
+
+
+
+
+
 cpu로 학습
+
+
+
+
+
+
+
 python train.py --img 640 --epochs 50 --data data.yaml --weights yolov5m.pt --device cpu
 
 
