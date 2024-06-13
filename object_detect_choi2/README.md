@@ -29,7 +29,7 @@ val: 본인주소/yolov5/train/images
 
 
 
-폴더 yolov5에서 아래명령 실행하기
+폴더 yolov5에서 실행하기
 wget https://github.com/ultralytics/yolov5/releases/download/v6.0/yolov5m.pt
 
 
