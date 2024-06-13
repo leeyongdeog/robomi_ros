@@ -48,7 +48,7 @@ gpu로 학습
 
 
 
-python train.py --img 640 --epochs 50 --data data.yaml --weights yolov5m.pt
+python train.py --img 640 --epochs 50 --data data.yaml --cfg 본인주소/yolov5/models/yolov5m.yaml --weights yolov5m.pt
 
 
 
@@ -70,7 +70,7 @@ cpu로 학습
 
 
 
-python train.py --img 640 --epochs 50 --data data.yaml --weights yolov5m.pt --device cpu
+python train.py --img 640 --epochs 50 --data data.yaml --cfg 본인주소/yolov5/modeslyolov5m.yaml --weights yolov5m.pt --device cpu
 
 
 
