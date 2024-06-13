@@ -58,7 +58,7 @@ roslaunch usb_cam usb_cam_2-test.launch   # ROS IoT 역할의 rpi ip128에서 �
 
 1. pc Ubuntu 20.04 ROS1 noetic 접속: ssh yh6@192.168.123.123 (박1)
 
-1. pc Ubuntu 20.04 ROS1 noetic 접속: ssh ?@192.168.123.125 (최1)
+1. pc Ubuntu 20.04 ROS1 noetic 접속: ssh user@192.168.123.125 (최1)
 
 1. pc Ubuntu 18.04 ROS1 melodic 접속: ssh tk@192.168.123.127 (김1)
 
