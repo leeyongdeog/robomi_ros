@@ -22,7 +22,7 @@ unzip test2.zip
 
 
 
-python train.py --img 640 --epochs 3 --data data.yaml --weights yolov5m.pt
+python train.py --img 640 --epochs 50 --data data.yaml --weights yolov5m.pt
 
 
 
