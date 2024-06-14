@@ -73,8 +73,6 @@ python train.py --img 640 --epochs 50 --batch 16 --data data.yaml --cfg /home/ub
 
 
 
-#cpu로 학습
-
 
 
 
@@ -90,6 +88,6 @@ python train.py --img 640 --epochs 50 --batch 16 --data data.yaml --cfg /home/ub
 
 
 
-python detect.py --weights 본인주소/yolov5/runs/train/exp/weights/best.pt --img 416 --conf 0.25 --source 0
+python detect.py --weights /home/yolov5/runs/train/exp/weights/best.pt --img 416 --conf 0.25 --source 0
 
 
