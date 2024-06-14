@@ -17,6 +17,11 @@ sudo mkdir /robomi_bot
 sudo chown $USER /robomi_bot
 ls -dl /robomi_bot
 ```
+```
+sudo mkdir /robomi_svr
+sudo chown $USER /robomi_svr
+ls -dl /robomi_svr
+```
 
 ---
 
