@@ -45,7 +45,7 @@ cd..
 cd..
 
 
-wget https://github.com/ultralytics/yolov5/releases/download/v6.0/yolov5m.pt
+wget https://github.com/ultralytics/yolov5/releases/download/v6.0/yolov5s.pt
 
 
 
@@ -57,7 +57,7 @@ wget https://github.com/ultralytics/yolov5/releases/download/v6.0/yolov5m.pt
 
 
 
-python train.py --img 640 --epochs 50 --data data.yaml --cfg 본인주소/yolov5/models/yolov5m.yaml --weights yolov5m.pt
+python train.py --img 640 --epochs 50 --data data.yaml --cfg 본인주소/yolov5/models/yolov5s.yaml --weights yolov5s.pt
 
 
 
