@@ -57,7 +57,7 @@ wget https://github.com/ultralytics/yolov5/releases/download/v6.0/yolov5s.pt
 
 
 
-python train.py --img 640 --epochs 50 --data data.yaml --cfg 본인주소/yolov5/models/yolov5s.yaml --weights yolov5s.pt
+python train.py --img 640 --epochs 50 --data data.yaml --cfg /yolov5/models/yolov5s.yaml --weights yolov5s.pt
 
 
 
@@ -79,7 +79,7 @@ python train.py --img 640 --epochs 50 --data data.yaml --cfg 본인주소/yolov5
 
 
 
-python train.py --img 640 --epochs 50 --data data.yaml --cfg 본인주소/yolov5/modeslyolov5m.yaml --weights yolov5m.pt --device cpu
+python train.py --img 640 --epochs 50 --data data.yaml --cfg 본인주소/yolov5/modeslyolov5s.yaml --weights yolov5s.pt --device cpu
 
 
 
