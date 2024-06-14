@@ -35,21 +35,16 @@ unzip this.zip
 
 
 
+mv train ~/yolov5/
+mv data.yaml ~/yolov5/
 
-
-#압축을 해제하고 yolov5폴더로 이동시킨다
-
-
-#data.yaml 파일을 yolov5/data에로 옮긴다
-
-#data.yaml에 train,val주소는 동일하게 설정
-
-#train: 본인주소/yolov5/train/images
-#val: 본인주소/yolov5/train/images
+cd..
 
 
 
-#폴더 yolov5에서 실행하기
+cd..
+
+
 wget https://github.com/ultralytics/yolov5/releases/download/v6.0/yolov5m.pt
 
 
