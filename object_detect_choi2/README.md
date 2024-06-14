@@ -1,5 +1,9 @@
 
 
+##용량부족 및 사용량 제한으로 아직 미완성
+
+
+
 pip install ultralytics
 
 
