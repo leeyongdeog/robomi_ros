@@ -44,6 +44,7 @@ cd..
 
 cd..
 
+## 기존에 m에서 s로 변경
 
 wget https://github.com/ultralytics/yolov5/releases/download/v6.0/yolov5s.pt
 
