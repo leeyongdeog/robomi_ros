@@ -57,7 +57,9 @@ wget https://github.com/ultralytics/yolov5/releases/download/v6.0/yolov5s.pt
 
 
 
-python train.py --img 640 --epochs 50 --data data.yaml --cfg /yolov5/models/yolov5s.yaml --weights yolov5s.pt
+python train.py --img 640 --epochs 50 --batch 16 --data data.yaml --cfg /home/ubuntu/yolov5/models/yolov5s.yaml --weights yolov5s.pt
+
+
 
 
 
@@ -78,17 +80,16 @@ python train.py --img 640 --epochs 50 --data data.yaml --cfg /yolov5/models/yolo
 
 
 
-
-python train.py --img 640 --epochs 50 --data data.yaml --cfg 본인주소/yolov5/modeslyolov5s.yaml --weights yolov5s.pt --device cpu
-
+python train.py --img 640 --epochs 50 --batch 16 --data data.yaml --cfg /home/ubuntu/yolov5/models/yolov5s.yaml --weights yolov5s.pt --device cpu
 
 
 
 
 
-실행하기 
+
+
 
 
 python detect.py --weights 본인주소/yolov5/runs/train/exp/weights/best.pt --img 416 --conf 0.25 --source 0
 
-exp1, exp2 이와 같은 exp 숫자는 학습 완료 시 출력됨
+
