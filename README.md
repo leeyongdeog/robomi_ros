@@ -37,7 +37,7 @@ ls -dl /robomi_svr
 
 ※  각 해당 결과물의 실행이나 주의 사항 관련은 각 디렉토리의 README.md 파일에 작성
 
-※  ROS 관련 외 개발 이용 및 시험 환경 구성 방법은 카페 게시물 https://cafe.naver.com/yhrobotics/13471 
+※  ROS 관련 포함 시험 환경 구성 방법은 카페 게시물 https://cafe.naver.com/yhrobotics/13471 
 
 ---
 
