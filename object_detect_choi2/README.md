@@ -42,11 +42,11 @@ unzip this.zip
 mv train ~/yolov5/
 mv data.yaml ~/yolov5/
 
-cd..
+cd ..
 
 
 
-cd..
+cd ..
 
 
 wget https://github.com/ultralytics/yolov5/releases/download/v6.0/yolov5s.pt
