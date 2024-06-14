@@ -16,16 +16,19 @@ pip install testresources
 pip install -r requirements.txt  # install
 
 
-# 전체 저장소 클론
+
 git clone https://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@github.com/leeyongdeog/robomi_ros.git
 
-# 클론한 디렉토리로 이동
+
 cd robomi_ros
 
-# 필요한 디렉토리만 남기고 나머지 삭제
+
 find . -maxdepth 1 ! -name 'object_detect_choi2' ! -name '.' -exec rm -rf {} +
 
+cd object_detect_choi2
 
+
+sudo apt install unzip
 
 
 unzip this.zip
