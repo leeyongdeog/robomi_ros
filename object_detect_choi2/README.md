@@ -1,3 +1,5 @@
+
+
 pip install ultralytics
 
 
@@ -6,6 +8,8 @@ git clone https://github.com/ultralytics/yolov5  # clone
 
 cd yolov5
 
+
+pip install testresources
 
 
 
@@ -21,24 +25,24 @@ unzip this.zip
 
 
 
-압축을 해제하고 yolov5폴더로 이동시킨다
+#압축을 해제하고 yolov5폴더로 이동시킨다
 
 
-data.yaml 파일을 yolov5/data에로 옮긴다
+#data.yaml 파일을 yolov5/data에로 옮긴다
 
-data.yaml에 train,val주소는 동일하게 설정
+#data.yaml에 train,val주소는 동일하게 설정
 
-train: 본인주소/yolov5/train/images
-val: 본인주소/yolov5/train/images
+#train: 본인주소/yolov5/train/images
+#val: 본인주소/yolov5/train/images
 
 
 
-폴더 yolov5에서 실행하기
+#폴더 yolov5에서 실행하기
 wget https://github.com/ultralytics/yolov5/releases/download/v6.0/yolov5m.pt
 
 
 
-gpu로 학습
+#gpu로 학습
 
 
 
@@ -60,7 +64,7 @@ python train.py --img 640 --epochs 50 --data data.yaml --cfg 본인주소/yolov5
 
 
 
-cpu로 학습
+#cpu로 학습
 
 
 
