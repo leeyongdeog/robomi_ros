@@ -96,6 +96,7 @@ roslaunch usb_cam usb_cam_2-test.launch   # ROS IoT 역할의 rpi ip128에서 �
 1. rpi 우분투 20.04 ROS1 noetic 접속: ssh ubuntu@192.168.123.124 (박1)
 
 1. rpi Rasbian buster 18.04 ROS1 noetic 접속: ssh pi@192.168.123.126 (김1)
+   ※ 네트웍 변경 사용 중: ssh pi@121.143.245.56
 
 1. rpi 우분투 20.04 ROS1 noetic 접속: ssh ubuntu@192.168.123.128 (최1)
 
