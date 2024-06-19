@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'org.audio.gstreamer.examples.AudioPlayExample'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'net.java.dev.jna:jna:5.10.0'
+    implementation 'net.java.dev.jna:jna-platform:5.10.0'
+    implementation 'org.freedesktop.gstreamer:gst1-java-core:1.4.0'
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDir 'src/main/res'
+        }
+    }
+}
+

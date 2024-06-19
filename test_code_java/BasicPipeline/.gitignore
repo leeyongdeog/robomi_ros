@@ -1,0 +1,22 @@
+# IntelliJ IDEA project files
+*.iml
+*.ipr
+*.iws
+
+# Gradle project files
+build/
+gradle/
+.gradle/
+
+# Output files
+*.class
+*.jar
+
+# Misc
+*.log
+*.swp
+*.DS_Store
+
+# IDE and OS specific files
+*~
+# ...
