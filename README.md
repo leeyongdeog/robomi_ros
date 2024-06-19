@@ -72,6 +72,21 @@ roslaunch usb_cam usb_cam_2-test.launch   # ROS IoT 역할의 rpi ip128에서 �
 ※ 게시물 https://cafe.naver.com/yhrobotics/13491 및 그 이전 관련 내용 참조
 
 ---
+
+#### 단순 voice 음성 안내 메시지 시험용 코드 위치
+
+```
+test_code_python
+```
+
+---
+
+#### 지스트리머 자바 버전 시험용 코드 위치
+
+```
+test_code_java/BasicPipeline
+```
+
 ---
 
 ### 환경 구성 및 이용 방식 기록 (시간 경과 후에는 무효 내용)
