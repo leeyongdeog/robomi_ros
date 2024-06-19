@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/heyoung/catkin_ws/src/connectwo_bringup/build/devel/setup.sh

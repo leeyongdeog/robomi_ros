@@ -1,0 +1,34 @@
+<launch>
+  <!-- Arguments -->
+  <arg name="model" default="burger" doc="model type [burger, waffle, waffle_pi]"/>
+  <arg name="slam_methods" default="gmapping" doc="slam type [gmapping, cartographer, hector, karto, frontier_exploration]"/>
+  <arg name="configuration_basename" default="footprint_lds_2d.lua"/>
+  <arg name="open_rviz" default="true"/>
+
+  <include file="$(find connectwo_bringup)/launch/connectwo_keyboard.launch">
+  </include>
+
+  <include file="$(find connectwo_bringup)/launch/connectwo_rplidar.launch">
+  </include>
+
+  <include file="$(find connectwo_bringup)/launch/connectwo_core.launch">
+  </include>
+
+  <!-- TurtleBot3 -->
+  <include file="$(find connectwo_bringup)/launch/connectwo_remote.launch">
+    <arg name="model" value="$(arg model)" />
+  </include>
+
+  <!-- SLA[ERROR] [1697694885.707843728]: No measured joint states publishers. Timeout reached.
+M: Gmapping, Cartographer, Hector, Karto, Frontier_exploration, RTAB-Map -->
+  <include file="$(find connectwo_bringup)/launch/connectwo_$(arg slam_methods).launch">
+    <arg name="model" value="$(arg model)"/>
+    <arg name="configuration_basename" value="$(arg configuration_basename)"/>
+  </include>
+
+  <!-- rviz -->
+  <!-- <group if="$(arg open_rviz)"> 
+    <node pkg="rviz" type="rviz" name="rviz" required="true"
+          args="-d $(find turtlebot3_slam)/rviz/turtlebot3_$(arg slam_methods).rviz"/>
+  </group> -->
+</launch>

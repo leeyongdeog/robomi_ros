@@ -1,0 +1,29 @@
+<launch>
+  <!-- Arguments -->
+  
+  <arg name="model" default="burger" doc="model type [burger, waffle, waffle_pi]"/>
+  <!-- <arg name="cmd_vel_topic" default="/cmd_vel" /> -->
+  <arg name="cmd_vel_topic" default="/fake_cmd_vel" />
+  <arg name="odom_topic" default="/fake_odom" />
+  <!-- <arg name="odom_topic" default="/imu_to_odom/imu_odometry" /> -->
+  <!-- <arg name="odom_topic" default="/odom_predictor_node/predicted_odometry" /> -->
+  <!-- <arg name="odom_topic" default="/odom" /> -->
+  <arg name="move_forward_only" default="false"/>
+
+  <!-- move_base -->
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS" />
+    <rosparam file="$(find connectwo_bringup)/param/costmap_common_params_$(arg model).yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find connectwo_bringup)/param/costmap_common_params_$(arg model).yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find connectwo_bringup)/param/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find connectwo_bringup)/param/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find connectwo_bringup)/param/move_base_params.yaml" command="load" />
+    <rosparam file="$(find connectwo_bringup)/param/dwa_local_planner_params_$(arg model).yaml" command="load" />
+    <!-- <rosparam file="$(find connectwo_bringup)/param/base_local_planner_params.yaml" command="load" /> -->
+    <!-- <remap from="/fake_cmd_vel" to="$(arg cmd_vel_topic)"/> -->
+    <remap from="/cmd_vel" to="$(arg cmd_vel_topic)"/>
+    <remap from="/odom" to="$(arg odom_topic)"/>
+    <param name="DWAPlannerROS/min_vel_x" value="0.0" if="$(arg move_forward_only)" />
+  </node>
+  <include file="$(find connectwo_bringup)/launch/connectwo_fake_cmd_vel.launch"/>
+</launch>
