@@ -47,11 +47,13 @@ ls -dl /robomi_work
 
 ### 환경 구성 및 이용 방식 기록 (시간 경과 후에도 유효 내용)
 
+※  결과물의 실행이나 주의 사항 등은 각 디렉토리의 README.md 파일에 각기 작성
+
 ※  최종 결과물 대상은 홈 디렉토리 밑에 robomi_bot 와 robomi_svr 작업 디렉토리에 생성
 
-※  각 해당 결과물의 실행이나 주의 사항 관련은 각 디렉토리의 README.md 파일에 작성
+※  ROS 관련 포함 시험 환경 구성 방법은 게시물은 https://cafe.naver.com/yhrobotics/13471
 
-※  ROS 관련 포함 시험 환경 구성 방법은 카페 게시물 https://cafe.naver.com/yhrobotics/13471 
+※  시나리오 관련 정보 게시물은 https://cafe.naver.com/yhrobotics/13507
 
 ---
 
