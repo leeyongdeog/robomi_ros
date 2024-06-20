@@ -113,7 +113,8 @@ test_code_java/BasicPipeline
 1. rpi 우분투 20.04 ROS1 noetic 접속: ssh ubuntu@192.168.123.124 (박1)
 
 1. rpi Rasbian buster 18.04 ROS1 noetic 접속: ssh pi@192.168.123.126 (김1)
-   ※ 네트웍 변경 사용 중: ssh pi@121.143.245.56
+   
+※ ssh pi@121.143.245.56 (192.168.123.0/24,192.168.0.0/24 포트포워딩 상태)
 
 1. rpi 우분투 20.04 ROS1 noetic 접속: ssh ubuntu@192.168.123.128 (최1)
 
