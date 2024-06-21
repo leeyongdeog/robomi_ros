@@ -33,7 +33,7 @@ cd object_detect_choi2
 sudo apt install unzip
 
 
-unzip this.zip
+unzip train.zip
 
 
 
