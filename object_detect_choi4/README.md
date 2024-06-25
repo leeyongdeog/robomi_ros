@@ -5,5 +5,10 @@
 
 ---
 
-
+```
+※ 내부적으로 중간 작업 디렉토리의 위치
+sudo mkdir /robomi_work
+sudo chown $USER /robomi_work
+ls -dl /robomi_work
+```
 
