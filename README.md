@@ -4,6 +4,21 @@
 
 ---
 
+cam_pub_node
+- roslaunch cam_pub_node cam_pub_node.launch
+- 2개의 usb 카메라 영상을 퍼블리싱
+- 2개의 usb 카메라가 연결되어있어야함
+- /dev/video0 : 실시간카메라(전방)
+- /dev/video2 : 전시물탐지카메라(측방)
+- nodelet 으로 구현되어있고, 실행파일이 아닌 라이브러리형태로 빌드됨
+
+sound_flask_node
+- roslaunch sound_flask_node sound_flask_node.launch
+- flask 웹서버
+- java 서버에서 http 리퀘스트로 명령을 전달하고, flask 서버에서 명령을 받고 처리(명령한 사운드 재생)
+- 미완. 구현중.
+
+
 ### 시험 시스템 디렉토리 사용 안내
 
 * robomi_bot 디렉토리에 구현 위치가 로봇 우선 실행이 가능한 코드들 위주로 준비 및 기록
