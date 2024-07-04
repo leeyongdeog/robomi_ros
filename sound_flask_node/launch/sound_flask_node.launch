@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="sound_flask_node" type="sound_flask_node.py" name="sound_flask_node" output="screen"/>
+</launch>
