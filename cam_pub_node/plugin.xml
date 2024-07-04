@@ -1,0 +1,5 @@
+<library path="lib/libcam_pub_node">
+    <class name="cam_pub_node/CamNodelet" type="cam_pub_node::CamNodelet" base_class_type="nodelet::Nodelet">
+        <description>Camera Publisher Nodelet</description>
+    </class>
+</library>
