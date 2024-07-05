@@ -1,0 +1,18 @@
+<launch>
+  <node pkg="nodelet" type="nodelet" name="cam_pub_node_manager" args="manager"/>
+
+<!-- 실시간 카메라 영상 publish node -->
+  <node pkg="nodelet" type="nodelet" name="realtime" args="load cam_pub_node/CamNodelet cam_pub_node_manager --no-bond" output="screen">
+    <param name="camera_index" value="0"/>
+    <param name="topic_name" value="realtime/image_raw"/>
+    <param name="fps" value="30.0"/>
+  </node>
+
+<!-- 전시물탐지 카메라 영상 publish node -->
+  <node pkg="nodelet" type="nodelet" name="detect" args="load cam_pub_node/CamNodelet cam_pub_node_manager --no-bond" output="screen">
+    <param name="camera_index" value="1"/>
+    <param name="topic_name" value="detect/image_raw"/>
+    <param name="fps" value="5.0"/>
+  </node>
+
+</launch>
