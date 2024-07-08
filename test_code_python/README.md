@@ -11,6 +11,14 @@
 
 ---
 
+#### 안내 메시지 실행 명령
+
+```
+aplay bbommi_9.wav
+aplay bbommi_3.wav
+aplay bbommi_2.wav
+aplay bbommi_1.wav
+```
 
 ### mp3 to wave 파일 변환 명령:
 
