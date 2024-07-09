@@ -79,6 +79,8 @@ roslaunch usb_cam usb_cam_2-test.launch   # ROS 로봇 IoT 역할의 RPi ip128�
 
 #### 단순 voice 음성 안내 메시지 시험용 코드 위치
 
+※ 레파지터리 내 다음 디렉토리 참조
+
 ```
 test_code_python
 ```
@@ -86,6 +88,8 @@ test_code_python
 ---
 
 #### 지스트리머 자바 버전 시험용 코드 위치
+
+※ 레파지터리 내 다음 디렉토리 참조
 
 ```
 test_code_java/BasicPipeline
