@@ -4,21 +4,6 @@
 
 ---
 
-cam_pub_node
-- roslaunch cam_pub_node cam_pub_node.launch
-- 2개의 usb 카메라 영상을 퍼블리싱
-- 2개의 usb 카메라가 연결되어있어야함
-- /dev/video0 : 실시간카메라(전방)
-- /dev/video2 : 전시물탐지카메라(측방)
-- nodelet 으로 구현되어있고, 실행파일이 아닌 라이브러리형태로 빌드됨
-
-sound_flask_node
-- roslaunch sound_flask_node sound_flask_node.launch
-- flask 웹서버
-- java 서버에서 http 리퀘스트로 명령을 전달하고, flask 서버에서 명령을 받고 처리(명령한 사운드 재생)
-- 미완. 구현중.
-
-
 ### 시험 시스템 디렉토리 사용 안내
 
 * robomi_bot 디렉토리에 구현 위치가 로봇 우선 실행이 가능한 코드들 위주로 준비 및 기록
@@ -44,6 +29,10 @@ sudo chown $USER /robomi_work
 ls -dl /robomi_work
 ```
 
+※  최종 결과물 대상은 홈 디렉토리 밑 robomi_bot 와 robomi_svr 생성 후 이용 시도
+
+※  중간 결과물 대상은 홈 디렉토리 밑 robomi_work 작업 디렉토리에 생성 후 이용 시도
+
 ---
 
 ### 작업 내용 개요
@@ -64,29 +53,27 @@ ls -dl /robomi_work
 
 ※  결과물의 실행이나 주의 사항 등은 각 디렉토리의 README.md 파일에 각기 작성
 
-※  최종 결과물 대상은 홈 디렉토리 밑에 robomi_bot 와 robomi_svr 작업 디렉토리에 생성
+※  시험 환경 구성 가이드 https://cafe.naver.com/yhrobotics/13471
 
-※  ROS 관련 포함 시험 환경 구성 방법은 게시물은 https://cafe.naver.com/yhrobotics/13471
-
-※  시나리오 관련 정보 게시물은 https://cafe.naver.com/yhrobotics/13507
+※  시나리오 중간 안 https://cafe.naver.com/yhrobotics/13507
 
 ---
 
-#### usb cam 2대를 rpi 연결 작동 요령 (결과물 실행 위주의 사례)
+#### usb cam 2대를 rpi 연결 작동 요령 (※ notelet 버전 cam_pub_node 사용 권장)
 
 ```
-roscore   # ROS 서버 역할의 pc ip123에서 실행
-```
-
-```
-roslaunch usb_cam usb_cam_0-test.launch   # ROS IoT 역할의 rpi ip128에서 실행
+roscore   # ROS 서버 역할의 PC ip123에서 실행
 ```
 
 ```
-roslaunch usb_cam usb_cam_2-test.launch   # ROS IoT 역할의 rpi ip128에서 실행
+roslaunch usb_cam usb_cam_0-test.launch   # ROS 로봇 IoT 역할의 RPi ip128에서 실행
 ```
 
-※ 게시물 https://cafe.naver.com/yhrobotics/13491 및 그 이전 관련 내용 참조
+```
+roslaunch usb_cam usb_cam_2-test.launch   # ROS 로봇 IoT 역할의 RPi ip128에서 실행
+```
+
+※ 게시물 https://cafe.naver.com/yhrobotics/13491 및 그 바로 직전 게시물 내용 참조 가능
 
 ---
 
@@ -105,6 +92,30 @@ test_code_java/BasicPipeline
 ```
 
 ---
+
+### cam_pub_node
+
+- 2개의 usb 카메라 영상을 퍼블리싱
+- 2개의 usb 카메라가 연결되어있어야함
+- /dev/video0 : 실시간카메라(전방)
+- /dev/video2 : 전시물탐지카메라(측방)
+
+```
+roslaunch cam_pub_node cam_pub_node.launch
+```
+
+※ nodelet 으로 구현되어있고, 실행파일이 아닌 라이브러리형태로 빌드됨
+
+### sound_flask_node
+
+- flask 웹서버
+- java 서버에서 http 리퀘스트로 명령을 전달하고, flask 서버에서 명령을 받고 처리(명령한 사운드 재생)
+- 주석: 미완. 구현중.
+
+```
+roslaunch sound_flask_node sound_flask_node.launch
+```
+
 
 ### 환경 구성 및 이용 방식 기록 (시간 경과 후에는 무효 내용)
 
