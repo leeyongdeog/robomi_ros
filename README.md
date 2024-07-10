@@ -97,7 +97,7 @@ test_code_java/BasicPipeline
 
 ---
 
-### cam_pub_node
+### 객체 탐지 및 단속물 탐지 cam_pub_node
 
 - 2개의 usb 카메라 영상을 퍼블리싱
 - 2개의 usb 카메라가 연결되어있어야함
@@ -112,7 +112,7 @@ roslaunch cam_pub_node cam_pub_node.launch
 
 ---
 
-### sound_flask_node
+### 제어 통보 역할 sound_flask_node
 
 - flask 웹서버
 - java 서버에서 http 리퀘스트로 명령을 전달하고, flask 서버에서 명령을 받고 처리(명령한 사운드 재생)
