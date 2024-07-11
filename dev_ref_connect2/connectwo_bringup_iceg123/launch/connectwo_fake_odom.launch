@@ -1,4 +1,0 @@
-<launch>
-  <node pkg="connectwo_bringup" type="fake_odom_publisher.py" name="fake_odom_publisher" output="screen"/>
-  <!-- <node pkg="teleop_twist_keyboard" type="aa.py" name="aa" output="screen"/> -->
-</launch>

@@ -1,0 +1,9 @@
+<launch>
+  <!-- ICP Odometry 노드 실행 -->
+  <!-- <node pkg="rtabmap_ros" type="icp_odometry" name="icp_odometry" output="screen">
+    <remap from="odom" to="icp_odom"/>
+  </node> -->
+
+  <!-- 고정 프레임 설정 -->
+  <node pkg="tf" type="static_transform_publisher" name="base_footprint_to_base_link" args="0 0 0 0 0 0 base_footprint base_link 100"/>
+</launch>

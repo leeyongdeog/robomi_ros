@@ -1,0 +1,36 @@
+<launch>
+  <!-- Arguments -->
+  <arg name="model" default="burger" doc="model type [burger, waffle, waffle_pi]"/>
+  <arg name="open_rviz" default="true"/>
+  <arg name="map_file" default="$(find connectwo_bringup)/maps/robomi.yaml"/>
+  <arg name="move_forward_only" default="false"/>
+  <arg name="move_base_topic" default="/move_base" />
+
+  <!-- 로봇 상태 퍼블리셔 추가
+  <param name="robot_description" command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro" />
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/> -->
+
+  <!-- Map server -->
+  <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/>
+
+  <!-- AMCL -->
+  <include file="$(find connectwo_bringup)/launch/amcl.launch">
+    <arg name="scan_topic" value="/scan"/>
+  </include>
+
+  <!-- EKF -->
+  <include file="$(find connectwo_bringup)/launch/ekf.launch" />
+  <!-- <include file="$(find connectwo_bringup)/launch/connectwo_fake_odom.launch"/> -->
+
+  <!-- move_base -->
+  <include file="$(find connectwo_bringup)/launch/move_base.launch">
+    <arg name="model" value="$(arg model)" />
+    <arg name="move_forward_only" value="$(arg move_forward_only)"/>
+  </include>
+
+  <!-- rviz -->
+  <group if="$(arg open_rviz)">
+    <node pkg="rviz" type="rviz" name="rviz" required="true"
+          args="-d $(find connectwo_bringup)/rviz/connectwo_navigation.rviz"/>
+  </group>
+</launch>

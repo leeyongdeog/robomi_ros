@@ -1,0 +1,24 @@
+obstacle_range: 12.0
+raytrace_range: 12.5
+
+footprint: [[-0.22, -0.21], [-0.22, 0.21], [0.22, 0.21], [0.22, -0.21]]
+robot_radius: 0.35
+
+inflation_radius: 1.0
+cost_scaling_factor: 3.0
+
+map_type: costmap
+observation_sources: scan
+scan: 
+  sensor_frame: base_scan
+  data_type: LaserScan
+  topic: scan
+  marking: true
+  clearing: true
+
+image: /home/tk/catkin_ws/src/connectwo_bringup/maps/robomi.pgm
+resolution: 0.050000
+origin: [-10.000000, -21.200000, 0.000000]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196

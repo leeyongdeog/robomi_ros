@@ -1,0 +1,13 @@
+<launch>
+  <!-- ICP Odometry 노드 실행 -->
+  <node pkg="rtabmap_ros" type="icp_odometry" name="icp_odometry" output="screen">
+    <remap from="odom" to="icp_odom"/>
+    <param name="publish_tf" value="false" />
+    <param name="guess_from_tf" value="true"/>
+  </node>
+
+  <!-- 로봇 로컬라이제이션 EKF 노드 실행 -->
+  <node pkg="robot_localization" type="ekf_localization_node" name="ekf_filter_node" clear_params="true" output="screen">
+    <rosparam command="load" file="$(find connectwo_bringup)/param/ekf.yaml" />
+  </node>
+</launch>

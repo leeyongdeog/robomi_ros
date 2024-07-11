@@ -1,0 +1,13 @@
+<launch>
+  <!-- <include file="$(find connectwo_bringup)/launch/connectwo_core.launch"/> -->
+
+ <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop_twist_keyboard" output="screen"/>
+  <!-- <node pkg="teleop_twist_keyboard" type="aa.py" name="aa" output="screen"/> -->
+
+  <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
+  <param name="model" value="$(arg model)"/>
+
+  <!-- turtlebot3_teleop_key already has its own built in velocity smoother -->
+  <!-- <node pkg="connectwo_bringup" type="turtlebot3_teleop_key" name="turtlebot3_teleop_keyboard"  output="screen"> -->
+  <!-- </node> -->
+</launch>

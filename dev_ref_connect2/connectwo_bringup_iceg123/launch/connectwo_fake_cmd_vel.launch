@@ -1,3 +1,0 @@
-<launch>
-  <node pkg="connectwo_bringup" type="fake_cmd_vel_publisher.py" name="fake_cmd_vel_publisher" output="screen"/>
-</launch>
